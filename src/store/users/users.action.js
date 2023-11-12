@@ -7,11 +7,11 @@ export const fetchUsersSuccess = (users) => createAction(USERS_ACTION_TYPE.FETCH
 
 export const fetchUsersFailed = (error) => createAction(USERS_ACTION_TYPE.FETCH_USERS_FAILED, error)
 
-export const fetchUsersAsync = () => async (dispatch) => {
+export const fetchUsersAsync = () => async (dispatch, getState) => {
     dispatch(fetchUsersStart())
 
     try {
-        const response = await fetch('https://reqres.in/api/users')
+        const response = await fetch(`https://reqres.in/api/users`)
         const data = await response.json()
         dispatch(fetchUsersSuccess(data.data))
     } catch (error) {

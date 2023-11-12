@@ -1,5 +1,5 @@
-import likeSVG from "../../assets/like.svg";
 import { useNavigate } from "react-router-dom";
+import likeSVG from "../../assets/like.svg";
 import "./users-item.styles.scss";
 
 export const UsersItem = ({ user }) => {

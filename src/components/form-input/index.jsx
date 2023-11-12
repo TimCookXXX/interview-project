@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./form-input.styles.scss";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import "./form-input.styles.scss";
 
 export const FormInput = ({ label, ...otherProps }) => {
     const [showPassIcon, setShowPassIcon] = useState(true);

@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import { selectCurrentUser } from "../../store/user/user.selector";
 import { Navigate } from "react-router-dom";
+import { selectCurrentUser } from "../../store/user/user.selector";
 
 export const Protected = ({ children }) => {
     const currentUser = useSelector(selectCurrentUser);

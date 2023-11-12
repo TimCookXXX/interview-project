@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Button } from "../UI/button";
-import { FormInput } from "../form-input";
-import "./sign-up.styles.scss";
 import { useNavigate } from "react-router-dom";
+import { FormInput } from "../form-input";
+import { Button } from "../UI/button";
 import {
     createAuthUserWithEmailAndPassword,
     createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
+import "./sign-up.styles.scss";
 
 const defaultFormField = {
     displayName: "",

@@ -1,15 +1,15 @@
+import { useEffect } from "react";
+import { Navigate, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { SignIn } from "../../components/sign-in";
-import "./authentication.styles.scss";
-import { selectCurrentUser } from "../../store/user/user.selector";
 import { SignUp } from "../../components/sign-up";
-import { useEffect } from "react";
 import {
     createUserDocumentFromAuth,
     onAuthStateChangedListener,
 } from "../../utils/firebase/firebase.utils";
+import { selectCurrentUser } from "../../store/user/user.selector";
 import { setCurrentUser } from "../../store/user/user.action";
-import { Navigate, useLocation } from "react-router-dom";
+import "./authentication.styles.scss";
 
 export const Authentication = () => {
     const location = useLocation();

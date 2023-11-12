@@ -3,7 +3,7 @@ import { USERS_ACTION_TYPE } from './users.types';
 const INITIAL_STATE = {
     users: [],
     isLoading: false,
-    error: null
+    error: null,
 }
 
 export const usersReducer = (state = INITIAL_STATE, action) => {
@@ -27,6 +27,10 @@ export const usersReducer = (state = INITIAL_STATE, action) => {
                 isLoading: false,
                 error: payload
             }
+            case USERS_ACTION_TYPE.FETCH_USERS_NEXT_PAGE:
+                return {
+                    ...state,
+                }
         default:
             return state
     }

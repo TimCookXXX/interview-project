@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { signOutUser } from "../../utils/firebase/firebase.utils";
 import { useDispatch } from "react-redux";
+import { signOutUser } from "../../utils/firebase/firebase.utils";
 import { setCurrentUser } from "../../store/user/user.action";
 import exitIcon from "../../assets/ic_round-exit-to-app.svg";
 import returnIcon from "../../assets/eva_arrow-ios-back-fill.svg";

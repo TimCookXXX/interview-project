@@ -1,10 +1,10 @@
-import './app.scss';
-import { Main } from './routes/main';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { SignUp } from './components/sign-up'
+import { Main } from './routes/main';
 import { Protected } from './routes/protected';
 import { Authentication } from './routes/authentication';
-import { SignUp } from './components/sign-up'
 import { User } from './routes/user';
+import './app.scss';
 
 export const App = () => {
   const router = createBrowserRouter([

@@ -1,16 +1,16 @@
-import { useNavigate, useParams } from "react-router-dom";
-import { Header } from "../../components/header";
-import "./user.styles.scss";
-import { Button } from "../../components/UI/button";
 import { useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { Header } from "../../components/header";
+import { Button } from "../../components/UI/button";
+import { Spinner } from "../../components/spinner";
+import { UserInfo } from "../../components/user-info";
 import {
     selectUsers,
     selectUsersIsLoading,
 } from "../../store/users/users.selector";
 import { fetchUsersAsync } from "../../store/users/users.action";
-import { Spinner } from "../../components/spinner";
-import { UserInfo } from "../../components/user-info";
+import "./user.styles.scss";
 
 export const User = () => {
     const isLoading = useSelector(selectUsersIsLoading);
