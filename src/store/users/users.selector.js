@@ -7,6 +7,11 @@ export const selectUsers = createSelector(
     (usersSlice) => usersSlice.users
 )
 
+export const selectUsersPage = createSelector(
+    [selectUsersReducer],
+    (usersSlice) => usersSlice.currentPage
+)
+
 export const selectUsersIsLoading = createSelector(
     [selectUsersReducer],
     (createSlice) => createSlice.isLoading

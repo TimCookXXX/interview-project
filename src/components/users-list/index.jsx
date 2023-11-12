@@ -4,6 +4,7 @@ import { UsersItem } from "../users-item";
 import {
     selectUsers,
     selectUsersIsLoading,
+    selectUsersPage,
 } from "../../store/users/users.selector";
 import { fetchUsersAsync } from "../../store/users/users.action";
 import { Spinner } from "../spinner";
@@ -13,6 +14,8 @@ export const UsersList = () => {
     const dispatch = useDispatch();
     const users = useSelector(selectUsers);
     const isLoading = useSelector(selectUsersIsLoading);
+    const currentPage = useSelector(selectUsersPage)
+    console.log(currentPage);
 
     useEffect(() => {
         dispatch(fetchUsersAsync());
