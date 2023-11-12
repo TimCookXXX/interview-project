@@ -7,7 +7,7 @@ export const fetchUsersSuccess = (users) => createAction(USERS_ACTION_TYPE.FETCH
 
 export const fetchUsersFailed = (error) => createAction(USERS_ACTION_TYPE.FETCH_USERS_FAILED, error)
 
-export const fetchUsersAsync = () => async (dispatch, getState) => {
+export const fetchUsersAsync = () => async (dispatch) => {
     dispatch(fetchUsersStart())
 
     try {
