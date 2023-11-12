@@ -1,0 +1,38 @@
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    width: 500px;
+
+    h2 {
+        font-size: 20px;
+        color: #151317;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+.sign-in-info {
+    p {
+        display: flex;
+        gap: 5px;
+
+        span {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: ease-out 0.3s;
+
+            &:hover {
+                color: red;
+                transition: ease-out 0.3s;
+            }
+        }
+    }
+}

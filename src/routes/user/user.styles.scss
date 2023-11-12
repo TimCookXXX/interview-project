@@ -1,0 +1,61 @@
+@import "../../vars.scss";
+
+.user-name {
+    font-size: 64px;
+    color: white;
+
+    @include tablets {
+        font-size: 36px;
+    }
+}
+
+.user-work {
+    font-size: 32px;
+    color: white;
+
+    @include tablets {
+        font-size: 20px;
+    }
+}
+
+.user-img {
+    width: 187px;
+    height: 187px;
+    border-radius: 100px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @include tablets {
+        gap: 16px;
+        flex-direction: column-reverse;
+    }
+}
+
+.user-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.user-container {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+    @include tablets {
+        gap: 32px;
+    }
+
+    .button-container {
+        justify-content: space-between;
+    }
+}

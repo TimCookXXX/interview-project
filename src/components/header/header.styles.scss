@@ -1,0 +1,59 @@
+@import "../../vars.scss";
+
+header {
+    background-color: #512689;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+    @include tablets {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.header-desc {
+    text-align: center;
+    padding-right: 110px;
+    padding-left: 110px;
+
+    @include tablets {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+.header-title {
+    font-size: 64px;
+    text-align: center;
+
+    @include tablets {
+        font-size: 36px;
+    }
+}
+
+.header-desc {
+    font-size: 20px;
+
+    @include tablets {
+        font-size: 16px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
